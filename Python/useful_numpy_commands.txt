@@ -1,0 +1,78 @@
+
+# NumPy Library - Useful Commands
+
+## Importing NumPy
+import numpy as np                          # Standard import convention
+
+## Creating Arrays
+np.array([1, 2, 3])                         # Create 1D array
+np.array([[1, 2], [3, 4]])                  # Create 2D array
+np.zeros((3, 3))                            # Create array of zeros
+np.ones((2, 2))                             # Create array of ones
+np.eye(3)                                   # Identity matrix
+np.arange(0, 10, 2)                         # Array with range and step
+np.linspace(0, 1, 5)                        # Evenly spaced values over a range
+np.random.rand(2, 3)                        # Random values in [0, 1)
+np.random.randint(0, 10, (2, 3))            # Random integers
+
+## Array Attributes
+arr.shape                                   # Shape of array
+arr.size                                    # Number of elements
+arr.dtype                                   # Data type
+arr.ndim                                    # Number of dimensions
+
+## Array Reshaping
+arr.reshape((rows, cols))                   # Reshape array
+arr.flatten()                               # Flatten to 1D
+arr.T                                       # Transpose of array
+
+## Indexing and Slicing
+arr[0]                                      # First element
+arr[1:3]                                    # Slice elements
+arr[:, 0]                                   # First column
+arr[1, :]                                   # Second row
+
+## Mathematical Operations
+np.add(a, b)                                # Elementwise addition
+np.subtract(a, b)                           # Elementwise subtraction
+np.multiply(a, b)                           # Elementwise multiplication
+np.divide(a, b)                             # Elementwise division
+np.dot(a, b)                                # Dot product
+np.sqrt(arr)                                # Square root
+np.exp(arr)                                 # Exponential
+np.log(arr)                                 # Natural log
+np.power(arr, 2)                            # Power
+
+## Aggregate Functions
+np.sum(arr)                                 # Sum of elements
+np.mean(arr)                                # Mean of elements
+np.median(arr)                              # Median
+np.std(arr)                                 # Standard deviation
+np.var(arr)                                 # Variance
+np.min(arr)                                 # Minimum
+np.max(arr)                                 # Maximum
+np.argmin(arr)                              # Index of minimum
+np.argmax(arr)                              # Index of maximum
+
+## Comparisons and Filtering
+arr > 5                                     # Elementwise comparison
+np.where(arr > 5)                           # Indices where condition is true
+np.any(arr > 5)                             # Any true
+np.all(arr > 5)                             # All true
+
+## Copying and Broadcasting
+arr.copy()                                  # Create a deep copy
+arr + 5                                     # Broadcasting
+
+## Saving and Loading
+np.save('array.npy', arr)                   # Save to .npy file
+np.load('array.npy')                        # Load from .npy file
+np.savetxt('array.txt', arr)                # Save to text file
+np.loadtxt('array.txt')                     # Load from text file
+
+## Miscellaneous
+np.unique(arr)                              # Unique elements
+np.sort(arr)                                # Sort array
+np.concatenate((a, b), axis=0)              # Concatenate arrays
+np.vstack((a, b))                           # Stack vertically
+np.hstack((a, b))                           # Stack horizontally

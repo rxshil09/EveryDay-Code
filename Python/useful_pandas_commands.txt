@@ -1,0 +1,85 @@
+
+# Pandas Library - Useful Commands
+
+## Importing Pandas
+import pandas as pd                          # Standard import convention
+
+## Creating DataFrames
+pd.DataFrame(data)                          # Create a DataFrame from a dictionary or array
+pd.Series(data)                             # Create a Series (1D array-like)
+
+## Reading Data
+pd.read_csv('file.csv')                     # Read a CSV file
+pd.read_excel('file.xlsx')                  # Read an Excel file
+pd.read_json('file.json')                   # Read a JSON file
+pd.read_sql(query, connection)              # Read from SQL database
+
+## Writing Data
+df.to_csv('file.csv')                       # Write DataFrame to CSV
+df.to_excel('file.xlsx')                    # Write DataFrame to Excel
+df.to_json('file.json')                     # Write DataFrame to JSON
+
+## Exploring Data
+df.head()                                   # First 5 rows
+df.tail()                                   # Last 5 rows
+df.info()                                   # Info on DataFrame
+df.describe()                               # Summary statistics
+df.shape                                    # Rows and columns count
+df.columns                                  # Column names
+df.index                                    # Row index labels
+
+## Selecting Data
+df['column']                                # Select single column
+df[['col1', 'col2']]                        # Select multiple columns
+df.loc[row_label]                           # Select by label
+df.iloc[row_index]                          # Select by index
+
+## Filtering and Querying
+df[df['column'] > value]                    # Filter rows
+df.query('column > value')                  # Query using string expression
+
+## Sorting and Ranking
+df.sort_values('column')                    # Sort by column
+df.sort_index()                             # Sort by index
+df.rank()                                   # Assign ranks
+
+## Modifying Data
+df['new'] = df['col1'] + df['col2']         # Add new column
+df.rename(columns={'old': 'new'})           # Rename columns
+df.drop('column', axis=1)                   # Drop column
+df.drop(index, axis=0)                      # Drop row
+
+## Handling Missing Data
+df.isnull()                                 # Check missing values
+df.dropna()                                 # Drop missing values
+df.fillna(value)                            # Fill missing values
+
+## Grouping and Aggregating
+df.groupby('column').sum()                  # Group by and aggregate
+df.agg({'col1': 'sum', 'col2': 'mean'})     # Multiple aggregations
+
+## Merging and Joining
+pd.merge(df1, df2, on='key')                # Merge on key
+df1.join(df2, how='left')                   # Join on index
+
+## Pivot Tables
+df.pivot_table(index='A', columns='B', values='C', aggfunc='sum')
+
+## Applying Functions
+df.apply(func)                              # Apply function to rows/columns
+df['col'].map(func)                         # Map values with function
+df.applymap(func)                           # Apply function elementwise
+
+## Time Series
+pd.to_datetime(df['date'])                  # Convert to datetime
+df.set_index('date', inplace=True)          # Set datetime index
+df.resample('M').mean()                     # Resample by month
+
+## Exporting to Clipboard or String
+df.to_clipboard()                           # Copy DataFrame to clipboard
+df.to_string()                              # Convert DataFrame to string
+
+## Misc
+df.memory_usage()                           # Memory usage of DataFrame
+df.duplicated()                             # Detect duplicate rows
+df.drop_duplicates()                        # Drop duplicate rows

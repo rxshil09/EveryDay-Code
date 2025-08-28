@@ -1,0 +1,30 @@
+html {
+    font-size:22px;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+h1 {
+    text-align: center;
+}
+a {
+    color: aliceblue;
+}
+a:visited {
+    color: lightgrey;
+}
+a:hover, a:active {
+    color: #eee;
+}
+figcaption {
+    color: bisque;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}

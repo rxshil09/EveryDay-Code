@@ -1,0 +1,49 @@
+
+JUPYTER NOTEBOOK SHORTCUTS
+===========================
+
+MODES IN JUPYTER
+----------------
+- Edit Mode (Green border): When you're typing inside a cell
+- Command Mode (Blue border): When you're selecting cells
+
+Switch Modes:
+- Esc: Enter Command Mode
+- Enter: Enter Edit Mode
+
+EDIT MODE SHORTCUTS
+--------------------
+Ctrl + Enter     : Run current cell
+Shift + Enter    : Run cell and move to next
+Alt + Enter      : Run cell and insert new cell below
+Esc              : Switch to Command Mode
+
+COMMAND MODE SHORTCUTS (Press Esc first)
+----------------------------------------
+A                : Insert cell Above
+B                : Insert cell Below
+D + D            : Delete cell
+Z                : Undo cell deletion
+Y                : Change to Code cell
+M                : Change to Markdown cell
+Shift + M        : Merge selected cells
+X                : Cut selected cell
+C                : Copy selected cell
+V                : Paste cell Below
+Shift + V        : Paste cell Above
+Enter            : Enter Edit Mode
+
+MISCELLANEOUS SHORTCUTS
+------------------------
+Ctrl + S         : Save notebook
+L                : Toggle line numbers
+O                : Toggle cell output
+H                : Show keyboard shortcut help
+Shift + Tab      : Show docstring/tooltip (in Edit Mode)
+Ctrl + Shift + - : Split cell at cursor (in Edit Mode)
+
+VS CODE SPECIFIC SHORTCUTS
+---------------------------
+F1 → Jupyter: Create New Blank Notebook
+Ctrl + Shift + P → Python: Select Interpreter
+Ctrl + Shift + P → Jupyter: Select Interpreter to start Jupyter

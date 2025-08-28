@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+
+    // ADDING A ELEMENT
+    // isme puri list ko traverse krta hai innerHTML isliye optimised way nhi hai
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("C++")
+    addLanguage("python")
+
+    // more optimised way while using big databases
+    function addOptiLanuage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanuage("java")
+    addOptiLanuage("ruby")
+   
+
+    // EDITING
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    secondLang.style.color = "orange"
+    // secondLang.innerHTML = 'waddsadsf'
+    const newLi = document.createElement('li')
+    newLi.textContent = "golang"
+    secondLang.replaceWith(newLi)
+
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li> go go ga ga</li>'
+
+
+    // REMOVE
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove();
+
+
+</script>
+
+</html>

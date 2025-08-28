@@ -1,0 +1,14 @@
+Quick open menu -> ctrl + p  
+scroll with keyboard -> ctrl + up/down arrow
+Navigate between different sections of your file -> first "ctrl + p", then type "@"
+Insert line below -> ctrl + enter
+Select all matching words -> ctrl + shift + L
+To find next matching word -> ctrl + alt + p
+Duplicate lines (copy line down) -> ctrl + d
+run code -> ctrl + alt + c
+clear terminal -> alt + m
+
+
+(In Python)
+
+ctrl + ] -> indents to right by 1 unit
