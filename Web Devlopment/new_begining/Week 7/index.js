@@ -6,7 +6,8 @@ const mongoose = require("mongoose")
 const bcrypt = require("bcrypt")
 const z = require("zod")
 
-mongoose.connect("mongodb+srv://User0:User0@cluster0.oovxx4e.mongodb.net/Todo-app-database")
+// enter yoour mongoDB credentials
+mongoose.connect("mongodb+srv://yourPass:yourPass@cluster0.oovxx4e.mongodb.net/Todo-app-database")
 
 const app = express()
 
